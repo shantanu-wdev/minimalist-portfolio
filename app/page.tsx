@@ -1,5 +1,23 @@
+import Header from './components/header/page';
+import Hero from './components/hero/page';
+import WorkExperience from './components/workExperience/page';
+import Skillset from './components/skillSet/page';
+import Projects from './components/projects/projects';
+import BlogSection from './components/blog/page';
+import ContactSection from './components/contactSection/page';
+import Footer from './components/footer/footer';
+
 export default function Home() {
-  return (
-    <h1>Hello</h1>
-  );
+  return (<>
+    <Header />
+    <main className='w-full flex flex-col align-middle'>
+      <Hero />
+      <WorkExperience />
+      <Skillset />
+      <Projects />
+      <BlogSection />
+      <ContactSection />
+    </main>
+    <Footer />
+  </>);
 }

@@ -13,11 +13,11 @@ const Header = () => {
         <a href="#" className="text-lg font-semibold text-gray-800">shantanu.wdev</a>
 
         <nav className="hidden md:flex gap-6 text-sm text-gray-700">
-          <a href="#">Work Experience</a>
-          <a href="#">Skillset</a>
-          <a href="#">Projects</a>
-          <a href="#">Blogs</a>
-          <a href="#">Contact</a>
+          <a href="#work-experience">Work Experience</a>
+          <a href="#skillset">Skillset</a>
+          <a href="#projects">Projects</a>
+          <a href="blog">Blogs</a>
+          <a href="#contact">Contact</a>
         </nav>
 
         <div className="hidden md:block">
@@ -37,11 +37,11 @@ const Header = () => {
       {isOpen && (
         <div className="md:hidden border-gray-200 ">
           <nav className="flex flex-col bg-transparent items-center gap-4 py-4 text-gray-800 text-sm">
-            <a href="#" onClick={() => setIsOpen(false)}>Work Experience</a>
-            <a href="#" onClick={() => setIsOpen(false)}>Skillset</a>
-            <a href="#" onClick={() => setIsOpen(false)}>Projects</a>
-            <a href="#" onClick={() => setIsOpen(false)}>Blogs</a>
-            <a href="#" onClick={() => setIsOpen(false)}>Contact</a>
+            <a href="#work-experience" onClick={() => setIsOpen(false)}>Work Experience</a>
+            <a href="#skillset" onClick={() => setIsOpen(false)}>Skillset</a>
+            <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
+            <a href="/blog" onClick={() => setIsOpen(false)}>Blogs</a>
+            <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
             <button
               onClick={() => setIsOpen(false)}
               className="px-4 py-2 rounded-md bg-gray-900 text-white text-sm"

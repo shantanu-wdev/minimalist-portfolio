@@ -1,29 +1,6 @@
-import React from 'react';
+import _interface from '../../interface';
 
 export default function BlogSection() {
-  const blogs = [
-    {
-      title: "Understanding CI/CD for Frontend Developers",
-      summary: "Learn how to integrate continuous integration and deployment workflows in frontend projects using GitHub Actions and Vercel.",
-      date: "June 8, 2025",
-      tags: ["CI/CD", "GitHub", "Frontend"],
-      link: "#"
-    },
-    {
-      title: "CSS vs Tailwind: When to Use What?",
-      summary: "TailwindCSS offers utility-first styling, but traditional CSS still shines in some places. Here's how to make the right choice.",
-      date: "May 24, 2025",
-      tags: ["CSS", "Tailwind", "Design"],
-      link: "#"
-    },
-    {
-      title: "React Patterns You Should Know",
-      summary: "Cleaner components, better state management, and scalable architecture. These React patterns make life easier.",
-      date: "May 11, 2025",
-      tags: ["React", "Hooks", "Best Practices"],
-      link: "#"
-    }
-  ];
 
   return (
     <section className="w-full bg-gray-50 flex justify-center px-0 py-8" id="blogs">
@@ -31,7 +8,7 @@ export default function BlogSection() {
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 text-gray-900">Blog</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogs.map((post, index) => (
+          {_interface.blogs.map((post, index) => (
             <div
               key={index}
               className="bg-white rounded-xl shadow-md p-6 flex flex-col justify-between hover:shadow-lg transition group"

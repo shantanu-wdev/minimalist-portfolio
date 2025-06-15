@@ -3,7 +3,7 @@ import React from 'react';
 export default function workExperience() {
   const jobs = [
     {
-      company: 'Softway Tech',
+      company: 'Hostzop Cloud Services',
       role: 'Frontend Developer',
       duration: 'Jan 2023 – Present',
       location: 'Indore, India',
@@ -12,19 +12,18 @@ export default function workExperience() {
         'Implemented reusable components and optimized bundle size',
         'Collaborated with backend team on REST APIs and deployment'
       ],
-      stack: ['React', 'Next.js', 'Tailwind CSS', 'CI/CD', 'GCP']
+      stack: ['PHP', 'Tailwind CSS', 'Typescript', 'Next.js', 'Git', 'CI/CD']
     },
     {
-      company: 'Techzen Logic',
-      role: 'Junior Frontend Developer',
-      duration: 'Feb 2022 – Dec 2022',
+      company: 'Inntaglio',
+      role: 'Junior Software Developer',
+      duration: 'July 2023 – Jan 2025',
       location: 'Indore, India',
       responsibilities: [
-        'Developed modular UI using Bootstrap 5 and JavaScript',
-        'Contributed to PHP-based CMS customization',
-        'Wrote clean, accessible HTML and CSS code'
+        'I’m a frontend developer turning ideas into elegant, responsive web apps. With expertise in HTML, CSS, JavaScript, React, and Next.js, I bring pixel-perfect designs to life with performance and accessibility in mind. Let’s collaborate and build user-friendly digital experiences that look as good as they work.',
+        'Implemented industry-standard development practices, including improving code efficiency, maintainability, and scalability',
       ],
-      stack: ['HTML', 'CSS', 'Bootstrap 5', 'JavaScript', 'PHP']
+      stack: ['HTML', 'CSS', 'Bootstrap 5', 'JavaScript', 'Reactjs', 'Git', 'GCP']
     }
   ];
 

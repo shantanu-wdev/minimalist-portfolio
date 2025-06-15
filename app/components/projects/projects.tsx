@@ -3,7 +3,7 @@ import React from 'react';
 export default function Projects() {
   const projects = [
     {
-      title: 'HireBridge – Job Portal App',
+      title: 'EventGo – Event Management in easy way',
       description:
         'A privacy-first job portal for candidates, companies, and admins with real-time updates, role-based dashboards, and transparent hiring workflows.',
       tech: ['Next.js', 'Tailwind CSS', 'Firebase', 'React Hook Form'],
@@ -12,19 +12,19 @@ export default function Projects() {
       githubLink: '#'
     },
     {
-      title: 'My Dev Blog',
+      title: 'Hostzop.com',
       description:
         'A minimal blogging platform built with Next.js and Firebase, focused on speed, readability, and easy content publishing through markdown.',
-      tech: ['Next.js', 'Bootstrap 5', 'Firebase', 'Markdown'],
+      tech: ['HTML', 'CSS', 'Bootstrap 4', 'PHP'],
       image: '/images/devblog-preview.png',
       liveLink: '#',
       githubLink: '#'
     },
     {
-      title: 'UI Snippets Library',
+      title: 'Web Hosting Bingo',
       description:
         'A curated library of ready-to-use responsive UI components and layouts for developers, built with Tailwind and deployed on Vercel.',
-      tech: ['Tailwind CSS', 'Vercel', 'HTML5', 'Netlify'],
+      tech: ['HTML', 'CSS', 'Tailwind CSS', 'Typescript', 'Nextjs'],
       image: '/images/uisnippets-preview.png',
       liveLink: '#',
       githubLink: '#'

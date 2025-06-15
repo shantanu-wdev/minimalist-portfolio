@@ -14,8 +14,8 @@ export default function Skillset() {
   };
 
   return (
-    <section className="w-full bg-gray-50 py-16 px-4" id="skillset">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="w-full bg-gray-50 flex justify-center px-0 py-14" id="skillset">
+      <div className="w-11/12 text-left md:text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Skillset</h2>
         <p className="text-gray-600 mb-12 text-sm sm:text-base">
           A balanced mix of frontend, backend, and deployment tools powering modern web development.

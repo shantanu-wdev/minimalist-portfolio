@@ -29,10 +29,10 @@ export default function workExperience() {
   ];
 
   return (
-    <section className="w-full bg-white flex justify-center" id="experience">
+    <section className="w-full h-1/2 bg-white flex justify-center px- py-8" id="experience">
       <div className="w-11/12">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-900">Work Experience</h2>
-        <div className="relative border-l-4 border-gray-200 pl-6 space-y-12">
+        <h2 className="text-3xl sm:text-4xl font-bold text-left md:text-center text-gray-900">Work Experience</h2><br />
+        <div className="relative border-l-4 border-gray-200">
           {jobs.map((job, idx) => (
             <div key={idx} className="relative group">
               <div className="absolute -left-3 top-1.5 w-5 h-5 bg-white border-4 border-gray-800 rounded-full group-hover:bg-gray-800 transition" />

@@ -7,7 +7,7 @@ export default function Projects() {
       description:
         'A privacy-first job portal for candidates, companies, and admins with real-time updates, role-based dashboards, and transparent hiring workflows.',
       tech: ['Next.js', 'Tailwind CSS', 'Firebase', 'React Hook Form'],
-      image: '/images/hirebridge-preview.png', // replace with your actual image path
+      image: '/images/hirebridge-preview.png',
       liveLink: '#',
       githubLink: '#'
     },
@@ -32,7 +32,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="w-full bg-white flex justify-center" id="projects">
+    <section className="w-full bg-white flex justify-center px-0 py-8" id="projects">
       <div className="w-11/12">
         <h2 className="text-3xl sm:text-4xl font-bold text-center mb-16 text-gray-900">Projects</h2>
 

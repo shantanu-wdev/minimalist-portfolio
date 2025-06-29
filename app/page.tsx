@@ -10,7 +10,7 @@ import Footer from './components/footer/footer';
 export default function Home() {
   return (<>
     <Header />
-    <main className='w-full flex flex-col align-middle'>
+    <main className='w-full max-w-[2000px] flex flex-col items-center'>
       <Hero />
       <WorkExperience />
       <Skillset />

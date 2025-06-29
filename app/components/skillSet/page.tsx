@@ -1,18 +1,6 @@
-import React from 'react';
+import __interface from '../../interface';
 
 export default function Skillset() {
-  const skills = {
-    "Frontend": [
-      "HTML5", "CSS3", "JavaScript", "React", "Next.js", "Tailwind CSS", "Bootstrap 5"
-    ],
-    "Backend & Scripting": [
-      "PHP", "REST APIs", "CI/CD", "GCP"
-    ],
-    "Tools & Version Control": [
-      "Git", "GitHub", "Vercel", "Netlify", "Postman"
-    ]
-  };
-
   return (
     <section className="w-full bg-gray-50 flex justify-center px-0 py-14" id="skillset">
       <div className="w-11/12 text-left md:text-center">
@@ -22,7 +10,7 @@ export default function Skillset() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-          {Object.entries(skills).map(([category, techList], idx) => (
+          {Object.entries(__interface.skills).map(([category, techList], idx) => (
             <div key={idx} className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
               <h3 className="text-lg font-semibold text-gray-800 mb-4">{category}</h3>
               <ul className="flex flex-wrap gap-3">

@@ -1,14 +1,14 @@
 'use client'
 import React, { useState } from 'react';
 import { FaAlignJustify, FaCircleXmark} from "react-icons/fa6";
-
+import ButtonPrimary from '@/app/utils/buttonPrimary';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="fixed w-full top-0 z-50 bg-white/70 backdrop-blur-md border-b border-gray-200 flex flex-col md:flex-row justify-center items-center">
-      <div className="w-11/12 py-3 flex justify-between items-center">
+      <div className="w-11/12 max-w-[2000px] py-3 flex justify-between items-center">
 
         <a href="#" className="text-lg font-semibold text-gray-800">shantanu.wdev</a>
 
@@ -21,9 +21,7 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:block">
-          <button className="px-4 py-2 rounded-md bg-gray-900 text-white text-sm hover:bg-gray-800 transition">
-            Contact
-          </button>
+          <ButtonPrimary url="#contact" title="Contact"></ButtonPrimary>
         </div>
 
         <button

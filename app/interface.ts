@@ -8,6 +8,24 @@ type Hero = {
     }[];
 };
 
+type Jobs = {
+    company: string,
+    role: string,
+    duration: string,
+    location: string,
+    responsibilities: string[],
+    stack: string[]
+}
+
+type Projects = {
+    title: string,
+    description: string,
+    tech: string[],
+    image: string,
+    liveLink: string,
+    githubLink: string
+}
+
 type Blog = {
     title: string;
     summary: string;
@@ -19,19 +37,84 @@ type Blog = {
 
 const heroSection: Hero = {
     greeting: 'Hi, I\'m Shantanu',
-    title: 'Turning elegant, aesthetic designs into fully responsive and visually stunning web applications.',
-    desc: 'I’m a frontend developer turning ideas into elegant, responsive web apps. I bring pixel-perfect designs to life with performance and accessibility in mind. Let’s collaborate and build user-friendly digital experiences that look as good as they work.',
+    title: 'Building responsive, high-performance web applications from aesthetic, mobile-first designs.',
+    desc: 'I\'m a frontend developer specializing in building elegant, responsive web applications. Turning pixel-perfect UI designs into high-performance, accessible, and user-friendly digital experiences. Let\'s collaborate to create modern websites and apps that look great and work seamlessly across all devices.',
     buttons: [
         {
             text: 'Hire Me',
-            url: '#'
+            url: '#contact'
         },
         {
             text: 'View Projects',
-            url: '#'
+            url: '#projects'
         }
     ]
 };
+
+const jobs: Jobs[] = [
+    {
+      company: 'Hostzop Cloud Services',
+      role: 'Frontend Developer',
+      duration: 'Jan 2023 – Present',
+      location: 'Indore, India',
+      responsibilities: [
+        'Built responsive UIs with React and Tailwind CSS',
+        'Implemented reusable components and optimized bundle size',
+        'Collaborated with backend team on REST APIs and deployment'
+      ],
+      stack: ['PHP', 'Tailwind CSS', 'Typescript', 'Next.js', 'Git', 'CI/CD']
+    },
+    {
+      company: 'Inntaglio',
+      role: 'Junior Software Developer',
+      duration: 'July 2023 – Jan 2025',
+      location: 'Indore, India',
+      responsibilities: [
+        'I’m a frontend developer turning ideas into elegant, responsive web apps. With expertise in HTML, CSS, JavaScript, React, and Next.js, I bring pixel-perfect designs to life with performance and accessibility in mind. Let’s collaborate and build user-friendly digital experiences that look as good as they work.',
+        'Implemented industry-standard development practices, including improving code efficiency, maintainability, and scalability',
+      ],
+      stack: ['HTML', 'CSS', 'Bootstrap 5', 'JavaScript', 'Reactjs', 'Git', 'GCP']
+    }
+];
+
+const skills = {
+    "Frontend": [
+      "HTML5", "CSS3", "JavaScript", "React", "Next.js", "Tailwind CSS", "Bootstrap 5"
+    ],
+    "Backend & Devops": [
+      "PHP", "Nodejs", "REST APIs", "CI/CD", "GCP", "Docker"
+    ],
+    "Tools": [
+      "Git", "Asana", "Jira", "Netlify", "Postman"
+    ]
+};
+
+const projects: Projects[] = [
+  {
+    title: 'EventGo – Event Management in easy way',
+    description: 'A privacy-first job portal for candidates, companies, and admins with real-time updates, role-based dashboards, and transparent hiring workflows.',
+    tech: ['Next.js', 'Tailwind CSS', 'Firebase', 'React Hook Form'],
+    image: 'https://placehold.co/500x400',
+    liveLink: '#',
+    githubLink: '#'
+  },
+  {
+    title: 'Hostzop.com',
+    description: 'A minimal blogging platform built with Next.js and Firebase, focused on speed, readability, and easy content publishing through markdown.',
+    tech: ['HTML', 'CSS', 'Bootstrap 4', 'PHP'],
+    image: 'https://placehold.co/500x400',
+    liveLink: '#',
+    githubLink: '#'
+  },
+  {
+    title: 'Web Hosting Bingo',
+    description: 'A curated library of ready-to-use responsive UI components and layouts for developers, built with Tailwind and deployed on Vercel.',
+    tech: ['HTML', 'CSS', 'Tailwind CSS', 'Typescript', 'Nextjs'],
+    image: 'https://placehold.co/500x400',
+    liveLink: '#',
+    githubLink: '#'
+  }
+];
 
 const blogs: Blog[] = [
     {
@@ -63,4 +146,4 @@ const blogs: Blog[] = [
     },
 ];
 
-export default { heroSection, blogs };
+export default { heroSection, jobs, skills, projects , blogs };

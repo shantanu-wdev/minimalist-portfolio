@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import CustomLeetCodeIcon from '../../utils/customLeetCodeIcon';
+import CustomLeetCodeIcon from '@/app/utils/customLeetCodeIcon';
 
 export default function Footer() {
   return (

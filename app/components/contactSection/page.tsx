@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
-import CustomLeetCodeIcon from '../../utils/customLeetCodeIcon';
+import CustomLeetCodeIcon from '@/app/utils/customLeetCodeIcon';
 import ButtonPrimary from '@/app/utils/buttonPrimary';
 
 export default function ContactSection() {
